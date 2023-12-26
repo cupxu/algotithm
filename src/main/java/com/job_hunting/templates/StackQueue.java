@@ -40,6 +40,7 @@ public class StackQueue {
     {
         public void main()
         {
+            // 不支持null值
             ArrayDeque queue = new ArrayDeque();
             // 依次将三个元素加入队列
             queue.offer("光头强");
@@ -49,6 +50,8 @@ public class StackQueue {
             System.out.println(queue);
             // 访问队列头部的元素，但并不将其poll出队列"栈"，输出：光头强
             System.out.println(queue.peek());
+            System.out.println(queue.getFirst());
+            System.out.println(queue.getLast());
             // 依然输出：[光头强, 熊大, 熊二]
             System.out.println(queue);
             // poll出第一个元素，输出：光头强

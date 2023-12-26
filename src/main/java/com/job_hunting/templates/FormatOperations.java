@@ -19,10 +19,14 @@ public class FormatOperations {
     }
 
     {
+        // %s 字符串
+        // %d 十进制整数
+        // %f 十进制浮点数
         // 格式化小数点，直接截断
         double d = 114.145;
-        DecimalFormat df = new DecimalFormat("#.00");
-        String str = df.format(d);
+        // 直接截断
+        double v = Math.floor(d * 100) / 100;
+        double w = Math.ceil(d * 100) / 100;
         // 格式化小数点，可四舍五入
         double de = 114.145;
         String.format("%.2f", de);

@@ -36,9 +36,7 @@ public class ArraysOperations {
         // array -> list 这样的list才能add remove
         String[] in = new String[]{ "1", "a"};
         // 创建列表，并指定长度，避免可能产生的扩容
-        List<String> out = new ArrayList<>(in.length);
-        // 实现数组添加到列表中
-        Collections.addAll(out, in);
+        List<String> list = new ArrayList<>(Arrays.asList(in));
     }
 
 }
